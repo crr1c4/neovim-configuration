@@ -23,6 +23,7 @@ require("lazy").setup({
   require('user/plugins/nvim-autopairs'),
   require('user/plugins/noice'),
   require('user/plugins/telescope'),
-  require('user/plugins/trouble')  
+  require('user/plugins/trouble'),  
+  require('user/plugins/toggleterm')  
 });
 

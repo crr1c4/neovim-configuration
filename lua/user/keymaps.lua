@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-
 local term_opts = { silent = true }
 
 -- Shorten function name
@@ -39,8 +38,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 
 -- Telescope
-vim.keymap.set('n', '<leader>f', ":Telescope find_files<CR>", opts)
-vim.keymap.set('n', '<leader>g', ":Telescope live_grep<CR>", opts)
+keymap('n', '<leader>f', ":Telescope find_files<CR>", opts)
+keymap('n', '<leader>g', ":Telescope live_grep<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
@@ -64,10 +63,5 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
--- Better terminal navigation
---[[ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
-keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
-keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
-keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts) ]]
-
--- vim.keymap.set("n", ":", "<Cmd>Cmdpalette<CR>")
+keymap("n", "<S-t>", ":ToggleTerm<CR>", opts)
+keymap('t', '<S-t>', 'exit<CR>', opts)
