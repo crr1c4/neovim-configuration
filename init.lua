@@ -3,5 +3,6 @@ require("user/keymaps")
 require("user/plugins")
 require("user/lsp")
 require('user/cmp')
--- Nerd font used: JetBrainsMono
 
+-- NOTE: Nerd font used: JetBrainsMono.
+-- TODO: Check ft plugins for tab sizes.
