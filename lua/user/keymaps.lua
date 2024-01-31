@@ -65,3 +65,4 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Terminal --
 keymap("n", "<S-t>", ":ToggleTerm<CR>", opts)
 keymap('t', '<S-t>', 'exit<CR>', opts)
+

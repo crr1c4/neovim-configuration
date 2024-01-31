@@ -24,6 +24,8 @@ require("lazy").setup({
   require('user/plugins/noice'),
   require('user/plugins/telescope'),
   require('user/plugins/trouble'),  
-  require('user/plugins/toggleterm')  
+  require('user/plugins/toggleterm'),
+  require('user/plugins/mini-indentscope'),
+  require('user/plugins/nvim-colorizer')
 });
 
