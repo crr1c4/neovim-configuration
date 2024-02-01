@@ -67,3 +67,4 @@ keymap("n", "<S-t>", ":ToggleTerm<CR>", opts)
 keymap('t', '<S-t>', 'exit<CR>', opts)
 
 keymap('n', '<leader>t', ':TodoTelescope<CR>', opts)
+keymap('n', '<leader>w', ':TroubleToggle<CR>', opts)
