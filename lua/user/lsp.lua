@@ -9,19 +9,10 @@ local on_attach = function(_, _)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})  -- View documentation of current function.
 end
 
-lspconfig['rust_analyzer'].setup({
-  on_attach = on_attach
-});
-
-lspconfig['denols'].setup({
-  on_attach = on_attach
-});
-
-lspconfig['clangd'].setup({
-  on_attach = on_attach,
-  cmd = {"clangd-12"}
-});
-
-lspconfig['hls'].setup({
-  on_attach = on_attach
-});
+lspconfig['lua_ls'].setup({ on_attach = on_attach });
+lspconfig['cssls'].setup({ on_attach = on_attach });
+lspconfig['html'].setup({ on_attach = on_attach });
+lspconfig['rust_analyzer'].setup({ on_attach = on_attach });
+lspconfig['denols'].setup({ on_attach = on_attach });
+lspconfig['clangd'].setup({ on_attach = on_attach });
+lspconfig['hls'].setup({ on_attach = on_attach });
