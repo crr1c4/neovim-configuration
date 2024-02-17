@@ -1,5 +1,7 @@
 # Neovim configuration
 
+This is my personal neovim configuration. Feel free to clone it!
+
 ## Copy this repository
 
 ~~~
