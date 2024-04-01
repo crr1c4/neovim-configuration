@@ -1,6 +1,6 @@
---[[ return {
+return {
   "mattn/emmet-vim",
   config = function()
-    vim.g.user_emmet_leader_key = '<leader>he'
+    vim.g.user_emmet_leader_key = '<leader>m'
   end
-} ]]
+}

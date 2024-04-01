@@ -17,7 +17,7 @@ return {
 
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "hls", "denols", "clangd", "rust_analyzer", "lua_ls", "tailwindcss", -- LSP
+        "hls", "denols", "clangd", "rust_analyzer", "lua_ls", "tailwindcss", "html", "cssls"-- LSP
         -- "codelldb", "js-debug-adapter" -- DAP
         -- "codelldb", "js-debug-adapter", "haskell-debug-adapter"
         -- "hls", "denols", "clangd", "rust_analyzer", "cssls", "html", "lua_ls", "tailwindcss"

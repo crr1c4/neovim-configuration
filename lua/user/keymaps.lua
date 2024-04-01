@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
@@ -38,8 +37,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 
 -- Telescope
-keymap('n', '<leader>f', ":Telescope find_files<CR>", opts)
-keymap('n', '<leader>g', ":Telescope live_grep<CR>", opts)
+-- keymap('n', '<leader>f', ":Telescope find_files<CR>", opts)
+-- keymap('n', '<leader>g', ":Telescope live_grep<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
@@ -66,5 +65,25 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<S-t>", ":ToggleTerm<CR>", opts)
 keymap('t', '<S-t>', 'exit<CR>', opts)
 
-keymap('n', '<leader>t', ':TodoTelescope<CR>', opts)
-keymap('n', '<leader>w', ':TroubleToggle<CR>', opts)
+-- keymap('n', '<leader>t', ':TodoTelescope<CR>', opts)
+-- keymap('n', '<leader>w', ':TroubleToggle<CR>', opts)
+
+local wk = require('which-key')
+
+wk.register({
+  -- Telescope
+  ['<leader>t'] = { name = "Telescope keymaps..." },
+  ['<leader>tf'] = { ':Telescope find_files theme=dropdown<CR>', "Find files." },
+  ['<leader>tg'] = { ':Telescope live_grep theme=dropdown<CR>', "Live grep." },
+  ['<leader>tt'] = { ':TodoTelescope theme=dropdown<CR>', "Find todos" },
+  ['<leader>td'] = { ':Telescope diagnostics theme=dropdown<CR>', "Show diagnostics" },
+  -- LSP octions
+  ['<leader>l'] = { name = "Language Server Protocol keymaps..." },
+  ['<leader>lr'] = { vim.lsp.buf.rename, 'Rename symbol' },
+  ['<leader>lc'] = { vim.lsp.buf.code_action, 'Code actions' },
+  ['<leader>ld'] = { vim.lsp.buf.definition, 'Go to definition' },
+  ['<leader>li'] = { vim.lsp.buf.implementation, 'Go to implementation' },
+  -- ['<leader>le'] = { require('telescope.builtin').lsp_references, 'Go to references' },
+  ['<leader>lf'] = { vim.lsp.buf.format, 'Format file' },
+  ['<leader>ls'] = { vim.lsp.buf.hover, 'View documentation' },
+})
