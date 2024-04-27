@@ -31,6 +31,12 @@ keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+-- Block arrow keys
+keymap("", "<Up>", "", opts)
+keymap("", "<Down>", "", opts)
+keymap("", "<Left>", "", opts)
+keymap("", "<Right>", "", opts)
+
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
@@ -75,15 +81,15 @@ wk.register({
   ['<leader>t'] = { name = "Telescope keymaps..." },
   ['<leader>tf'] = { ':Telescope find_files theme=dropdown<CR>', "Find files." },
   ['<leader>tg'] = { ':Telescope live_grep theme=dropdown<CR>', "Live grep." },
-  ['<leader>tt'] = { ':TodoTelescope theme=dropdown<CR>', "Find todos" },
+  ['<leader>tt'] = { ':TodoTelescope theme=dropdown<CR>', "Find todos." },
   ['<leader>td'] = { ':Telescope diagnostics theme=dropdown<CR>', "Show diagnostics" },
   -- LSP octions
   ['<leader>l'] = { name = "Language Server Protocol keymaps..." },
-  ['<leader>lr'] = { vim.lsp.buf.rename, 'Rename symbol' },
-  ['<leader>lc'] = { vim.lsp.buf.code_action, 'Code actions' },
-  ['<leader>ld'] = { vim.lsp.buf.definition, 'Go to definition' },
-  ['<leader>li'] = { vim.lsp.buf.implementation, 'Go to implementation' },
+  ['<leader>lr'] = { vim.lsp.buf.rename, 'Rename symbol.' },
+  ['<leader>lc'] = { vim.lsp.buf.code_action, 'Code actions.' },
+  ['<leader>ld'] = { vim.lsp.buf.definition, 'Go to definition.' },
+  ['<leader>li'] = { vim.lsp.buf.implementation, 'Go to implementation.' },
   -- ['<leader>le'] = { require('telescope.builtin').lsp_references, 'Go to references' },
-  ['<leader>lf'] = { vim.lsp.buf.format, 'Format file' },
-  ['<leader>ls'] = { vim.lsp.buf.hover, 'View documentation' },
+  ['<leader>lf'] = { vim.lsp.buf.format, 'Format file.' },
+  ['<leader>ls'] = { vim.lsp.buf.hover, 'View documentation.' },
 })
