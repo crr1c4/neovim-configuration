@@ -23,7 +23,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -77,12 +76,13 @@ keymap('t', '<S-t>', 'exit<CR>', opts)
 local wk = require('which-key')
 
 wk.register({
+  ["<leader>e"] = { ":NvimTreeToggle<cr>", "Toggle file tree" },
   -- Telescope
-  ['<leader>t'] = { name = "Telescope keymaps..." },
-  ['<leader>tf'] = { ':Telescope find_files theme=dropdown<CR>', "Find files." },
-  ['<leader>tg'] = { ':Telescope live_grep theme=dropdown<CR>', "Live grep." },
-  ['<leader>tt'] = { ':TodoTelescope theme=dropdown<CR>', "Find todos." },
-  ['<leader>td'] = { ':Telescope diagnostics theme=dropdown<CR>', "Show diagnostics" },
+  ['<leader>t'] = { name = "Telescope (fuzzy finder) keymaps..." },
+  ['<leader>tf'] = { ':Telescope find_files theme=ivy<CR>', "Find files." },
+  ['<leader>tg'] = { ':Telescope live_grep theme=ivy<CR>', "Live grep." },
+  ['<leader>tt'] = { ':TodoTelescope theme=ivy<CR>', "Find todos." },
+  ['<leader>td'] = { ':Telescope diagnostics theme=ivy<CR>', "Show diagnostics" },
   -- LSP octions
   ['<leader>l'] = { name = "Language Server Protocol keymaps..." },
   ['<leader>lr'] = { vim.lsp.buf.rename, 'Rename symbol.' },
