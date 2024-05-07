@@ -19,5 +19,5 @@ lspconfig['rust_analyzer'].setup({});
 lspconfig['denols'].setup({});
 lspconfig['clangd'].setup({});
 lspconfig['hls'].setup({});
-
+lspconfig['pyright'].setup({});
 

@@ -22,6 +22,7 @@ local options = {
   termguicolors = true,
   title = true,
   wrap = false,
+  -- virtualedit = "insert"
 }
 
 for key, value in pairs(options) do
