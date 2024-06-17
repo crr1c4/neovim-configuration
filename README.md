@@ -5,7 +5,7 @@ This is my personal neovim configuration. Feel free to clone it!
 ## Copy this repository
 
 ~~~
-git clone https://github.com/crr1c4/neovim-configuration ~/.config/neovim
+git clone https://github.com/crr1c4/neovim-configuration ~/.config/nvim
 ~~~
 
 ## Keympas
