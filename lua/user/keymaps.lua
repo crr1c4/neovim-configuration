@@ -77,6 +77,7 @@ local wk = require('which-key')
 
 wk.register({
   ["<leader>e"] = { ":Neotree toggle<cr>", "Toggle file tree" },
+  ["<leader>m"] = { ":MarkdownPreviewToggle<cr>", "Markdown Preview" },
   -- Telescope
   ['<leader>t'] = { name = "Telescope (fuzzy finder) keymaps..." },
   ['<leader>tf'] = { ':Telescope find_files theme=ivy<CR>', "Find files." },

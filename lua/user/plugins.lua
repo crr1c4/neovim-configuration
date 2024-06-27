@@ -35,5 +35,6 @@ require("lazy").setup({
   require('user/plugins/todo-comments'),
   require('user/plugins/which-key'),
   require('user/plugins/startup'),
+  require('user/plugins/markdown-preview'),
 });
 
