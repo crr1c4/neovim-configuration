@@ -33,6 +33,7 @@ require("lazy").setup({
   -- require('user/plugins/nvim-dap'),
   require('user/plugins/mason'),
   require('user/plugins/todo-comments'),
-  require('user/plugins/which-key')
+  require('user/plugins/which-key'),
+  require('user/plugins/startup'),
 });
 
