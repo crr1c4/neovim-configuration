@@ -76,7 +76,7 @@ keymap('t', '<S-t>', 'exit<CR>', opts)
 local wk = require('which-key')
 
 wk.register({
-  ["<leader>e"] = { ":NvimTreeToggle<cr>", "Toggle file tree" },
+  ["<leader>e"] = { ":Neotree toggle<cr>", "Toggle file tree" },
   -- Telescope
   ['<leader>t'] = { name = "Telescope (fuzzy finder) keymaps..." },
   ['<leader>tf'] = { ':Telescope find_files theme=ivy<CR>', "Find files." },

@@ -9,3 +9,4 @@ require('user/cmp')
 -- TODO: Change indent line plugin.
 -- TODO: Search markdown preview and LSP support.
 -- TODO: Complete and change which-key settings and mappings.
+
