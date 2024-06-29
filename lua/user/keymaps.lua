@@ -76,6 +76,7 @@ keymap('t', '<S-t>', 'exit<CR>', opts)
 local wk = require('which-key')
 
 wk.register({
+  ["<leader>q"] = { vim.diagnostic.open_float, "Show diagnostics" },
   ["<leader>e"] = { ":Neotree toggle<cr>", "Toggle file tree" },
   ["<leader>m"] = { ":MarkdownPreviewToggle<cr>", "Markdown Preview" },
   -- Telescope

@@ -21,7 +21,7 @@ local options = {
   shiftwidth = 2,
   termguicolors = true,
   title = true,
-  wrap = false,
+  wrap = true,
   -- virtualedit = "insert"
 }
 
