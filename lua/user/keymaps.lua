@@ -67,8 +67,8 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
-keymap("n", "<S-t>", ":ToggleTerm<CR>", opts)
-keymap('t', '<S-t>', 'exit<CR>', opts)
+-- keymap("n", "<S-t>", ":ToggleTerm<CR>", opts)
+-- keymap('t', '<S-t>', 'exit<CR>', opts)
 
 -- keymap('n', '<leader>t', ':TodoTelescope<CR>', opts)
 -- keymap('n', '<leader>w', ':TroubleToggle<CR>', opts)
