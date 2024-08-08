@@ -25,7 +25,7 @@ require("lazy").setup({
   require('user/plugins/noice'),
   require('user/plugins/telescope'),
   require('user/plugins/trouble'),
-  -- require('user/plugins/toggleterm'),
+  require('user/plugins/toggleterm'),
   -- require('user/plugins/mini-indentscope'),
   require('user/plugins/indent-blankline'),
   require('user/plugins/nvim-colorizer'),
@@ -35,6 +35,6 @@ require("lazy").setup({
   require('user/plugins/todo-comments'),
   require('user/plugins/which-key'),
   require('user/plugins/startup'),
-  require('user/plugins/markdown-preview'),
+  -- require('user/plugins/markdown-preview'),
 });
 

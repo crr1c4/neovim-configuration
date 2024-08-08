@@ -67,8 +67,16 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
--- keymap("n", "<S-t>", ":ToggleTerm<CR>", opts)
--- keymap('t', '<S-t>', 'exit<CR>', opts)
+keymap("n", [[<S-t>]], ":ToggleTerm<CR>", opts)
+
+function _G.set_terminal_keymaps()
+  keymap("t", "<esc>", [[<C-\><C-n>]], opts)
+  keymap("t", "<C-k>", [[<C-\><C-n><C-w>k]], opts)
+  keymap("t", "<C-h>", [[<C-\><C-n><C-w>h]], opts)
+  keymap("t", "<C-l>", [[<C-\><C-n><C-w>l]], opts)
+end
+
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 -- keymap('n', '<leader>t', ':TodoTelescope<CR>', opts)
 -- keymap('n', '<leader>w', ':TroubleToggle<CR>', opts)
